@@ -14,6 +14,6 @@ app.get('/add',(req,res) =>{
     res.send('response add on express');
 });
 //3. strat express derver 
-app.listen(port, () => { console.log('express server running')}); 
+app.listen(port, () => { console.log('express running')}); 
 
 //4. after this u have to install nodemon 
