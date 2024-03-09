@@ -2,11 +2,15 @@
 const express = require('express');
 // initalizing expresss 
 const app =express();
+const postRouter= require('./routers/postRouter');
+// middle ware 
+app.use('/post',postRouter);
+
 // 2. defining port 
  const port = 5000;
 
 
- 
+
 app.get('/',(req,res) =>{ 
     res.send('response on express');
 });
