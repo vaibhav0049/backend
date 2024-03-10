@@ -12,4 +12,4 @@ mongoose.connect(url)
     
 });
 
-console.log('last line');
+module.export=mongoose;
