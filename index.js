@@ -1,9 +1,15 @@
 //1. import the expresss in index file 
 const express = require('express');
+const cors =require ('cors');
 // initalizing expresss 
 const app =express();
 const postRouter= require('./routers/postRouter');
 // middle ware 
+app.use(cors({
+    origin:'http://localhos:3000'
+}));
+// conerting json to js 
+app.use(express.json());
 app.use('/post',postRouter);
 
 // 2. defining port 
