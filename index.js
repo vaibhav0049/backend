@@ -6,7 +6,7 @@ const app =express();
 const postRouter= require('./routers/postRouter');
 // middle ware 
 app.use(cors({
-    origin:'http://localhos:3000'
+    origin:'http://localhost:3000'
 }));
 // conerting json to js 
 app.use(express.json());

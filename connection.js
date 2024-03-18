@@ -12,4 +12,4 @@ mongoose.connect(url)
     
 });
 
-module.export=mongoose;
+module.exports=mongoose;
