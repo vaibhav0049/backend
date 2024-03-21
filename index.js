@@ -4,7 +4,7 @@ const cors =require ('cors');
 // initalizing expresss 
 const app =express();
 const postRouter= require('./routers/postRouter');
-// middle ware 
+// middle ware  allowing request from 3000
 app.use(cors({
     origin:'http://localhost:3000'
 }));
@@ -14,8 +14,6 @@ app.use('/post',postRouter);
 
 // 2. defining port 
  const port = 5000;
-
-
 
 app.get('/',(req,res) =>{ 
     res.send('response on express');
